@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono, sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: #2F2235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 400px;
+    height: auto;
+    background: #3F3244;
+    border-radius: 5px;
+    box-shadow: 0 16px 18px rgba(0,0,0,1.0);
+}
+
+.calculator__display {
+    height: 80px;
+    border-radius: 5px 5px 0 0;
+    background: #60495A;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calculator__h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 45px;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: 100;
+    overflow-x: auto;
+}
+
+.calculator__h1 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+/* Custom Scrollbar */
+.calculator__display::-webkit-scrollbar {
+    width: 5px;
+}
+
+.calculator__display::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.calculator__display::-webkit-scrollbar-thumb {
+    background: #9F9F92;
+}
+
+.calculator__display::-webkit-scrollbar-thumb:hover {
+    background: #C9D5B5;
+}
+
+.calculator__button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 55px);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px 5px 5px 5px;
+    background: #ffffff;
+}
+
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: #C9D5B5;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+button:hover {
+    outline: none;
+    transform: translateY(1px);
+}
+
+button:active {
+    outline: none;
+    filter: brightness(110%);
+}
+
+button:focus {
+    outline: none;
+}
+
+.calculator__operator {
+    background: #9F9F92;
+    color: #ffffff;
+}
+
+.calculator__equal-sign {
+    grid-column: 4 / 5;
+    grid-row: 2 / 6;
+    background: #26B170;
+    color: #ffffff;
+}
+
+.calculator__clear {
+    background: #D2514C;
+    color: #ffffff;
+}
